@@ -1,0 +1,10 @@
+/var/log/nanohatoled/nanohatoled.log {
+    missingok
+    notifempty
+    weekly
+    create 0644 root adm
+    postrotate
+        killall -HUP nanohatoled
+    endscript
+}
+

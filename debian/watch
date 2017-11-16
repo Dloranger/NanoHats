@@ -1,0 +1,4 @@
+version=3
+
+https://github.com/richneese/bakebit/tags .*/archive/(.*)\.tar\.gz
+

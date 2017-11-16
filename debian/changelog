@@ -1,0 +1,7 @@
+nanopi-bakebits (1.0.0-1) stable; urgency=low
+
+  * First Builed
+  * Enabled hardening
+
+ -- Richard Neese <r.neese@gmail.com>  Fri, 10 Nov 2017 9:26:40 -0500
+ 
