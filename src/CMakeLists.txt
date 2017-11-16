@@ -243,9 +243,9 @@ if(WITH_FIRMWARE)
   add_subdirectory(Bakebit-Firmware-Tool)
 endif(WITH_FIRMWARE)
 
-option(HUBHAT "Set to ON to incude HatHub-C bin files" OFF)
+option(HUBHAT "Set to ON to incude HubHat bin files" OFF)
 message(STATUS "With HUBHAT = ${WITH_HUBHAT}")
-if(WITH_HATHUBHAT)
+if(WITH_HUBHAT)
   add_subdirectory(HubHAT)
 endif(WITH_HUBHAT)
 
