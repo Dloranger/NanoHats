@@ -1,6 +1,6 @@
-set(OLEDHAT_SOURCE_DIR "${CMAKE_SOURCE_DIR}/MotorHat" CACHE PATH
+set(MOTORHAT_SOURCE_DIR "${CMAKE_SOURCE_DIR}/MotorHat" CACHE PATH
 	"Path to python files")
-set(OLEDHAT_INSTALL_DIR "${HAT_SHARE_INSTALL_DIR}/motorhat" CACHE PATH
+set(MOTORHAT_INSTALL_DIR "${HAT_SHARE_INSTALL_DIR}/motorhat" CACHE PATH
 	"Path to python script files")
 	
 # Install targets
