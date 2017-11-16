@@ -1,10 +1,3 @@
-# Find the dl library - only for Linux, not required for FreeBSD
-if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
-  find_package(DL REQUIRED)
-  set(LIBS ${LIBS} ${DL_LIBRARIES})
-  include_directories(${DL_INCLUDES})
-endif()
-
 set(HUBHAT_SOURCE_DIR "${CMAKE_SOURCE_DIR}/HubHat" CACHE PATH
 
 # Add targets for version files
