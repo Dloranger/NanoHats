@@ -1,6 +1,7 @@
 set(DAEMON_SOURCE_DIR "${CMAKE_SOURCE_DIR}/OledHat/Oled-Daemon" CACHE PATH
 	"Path to python files")
 set(CMAKE_C_FLAGS "-lrt -lpthread")
+
 # Add targets for version files
 set(VERSION_DEPENDS)
 
@@ -16,7 +17,7 @@ add_executable(nanohatoled daemonize.c main.c
 )
 
 # Where to install Daemon Files
-install(FILES ${DAEMON_SOURCE_DIR}/OledHat/Oled-Daemon/bakebit.pth
+install(FILES ${DAEMON_SOURCE_DIR}/bakebit.pth
 	DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR}/python2.7/dist-packages
 	)
 message(STATUS "bakebit python path file will be installed to"
