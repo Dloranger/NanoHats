@@ -246,7 +246,7 @@ endif(WITH_FIRMWARE)
 option(HUBHAT "Set to ON to incude HubHat bin files" OFF)
 message(STATUS "With HUBHAT = ${WITH_HUBHAT}")
 if(WITH_HUBHAT)
-  add_subdirectory(HubHAT)
+  add_subdirectory(HubHat)
 endif(WITH_HUBHAT)
 
 option(MOTORHAT "Set to ON to incude HatMotor-Python files" OFF)
