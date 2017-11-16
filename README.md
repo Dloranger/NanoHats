@@ -29,9 +29,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Install
-=======
+Scripted Install
+================
+Grab the script from iinstall-script dir and chmod it +x and ./filename
 
+This will do a complete install of all parts of NANOHAT.
+
+
+ManualInstall
+=============
 step 1) git clone https://github.com/RichNeese/NanoHats.git /usr/src/NanoHats
 
 Step 2) cd /usr/src/NanoHats/src
