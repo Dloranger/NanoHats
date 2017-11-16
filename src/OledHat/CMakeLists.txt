@@ -1,13 +1,13 @@
-option(WITH_OLED_DAEMON "Set to ON to include HatOled Daemonizer support" OFF)
+option(WITH_OLED_DAEMON "Set to ON to include OledHat Daemonizer support" OFF)
 message(STATUS "With DEAMON = ${WITH_OLED_DAEMON}")
 if(WITH_OLED_DAEMON)
-  add_subdirectory(HatOled-Daemon)
+  add_subdirectory(Oled-Daemon)
 endif(WITH_OLED_DAEMON)
 
-option(WITH_OLED_SYSTEMD "Set to ON to include HatOled Systemd support" OFF)
+option(WITH_OLED_SYSTEMD "Set to ON to include Oledhat Systemd support" OFF)
 message(STATUS "With Systemd = ${WITH_OLED_SYSTEMD}")
 if(WITH_OLED_SYSTEMD)
-  add_subdirectory(HatOled_Systemd)
+  add_subdirectory(Oled_Systemd)
 endif(WITH_OLED_SYSTEMD)
 
 set(PYTHON_SOURCE_DIR "${CMAKE_SOURCE_DIR}/HatOled-Python" CACHE PATH
