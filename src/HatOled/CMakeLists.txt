@@ -1,8 +1,8 @@
-option(WITH_DAEMON "Set to ON to include HatOled Daemonizer support" OFF)
-message(STATUS "With DEAMON = ${WITH_DAEMON}")
-if(WITH_DAEMON)
+option(WITH_OLED_DAEMON "Set to ON to include HatOled Daemonizer support" OFF)
+message(STATUS "With DEAMON = ${WITH_OLED_DAEMON}")
+if(WITH_OLED_DAEMON)
   add_subdirectory(HatOled-Daemon)
-endif(WITH_DAEMON)
+endif(WITH_OLED_DAEMON)
 
 option(WITH_OLED_SYSTEMD "Set to ON to include HatOled Systemd support" OFF)
 message(STATUS "With Systemd = ${WITH_OLED_SYSTEMD}")
