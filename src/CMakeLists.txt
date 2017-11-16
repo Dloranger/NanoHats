@@ -246,35 +246,23 @@ include(FindCHOWN)
 # Add directories toc  build
 add_subdirectory(software)
 
-option(WITH_DAEMON "Set to ON to include DAEMONIZER support" OFF)
-message(STATUS "With DEAMON = ${WITH_DAEMON}")
-if(WITH_DAEMON)
-  add_subdirectory(oled-daemon)
-endif(WITH_DAEMON)
-
-option(HATHUB "Set to ON to incude HATHUB-C bin files" OFF)
+option(HATHUB "Set to ON to incude HatHub-C bin files" OFF)
 message(STATUS "With HATHUB = ${WITH_HATHUB}")
 if(WITH_HATHUB)
-  add_subdirectory(HatHub-C)
+  add_subdirectory(HatHub)
 endif(WITH_HATHUB)
 
-option(HATMOTOR "Set to ON to incude HATMOTOR-Python files" OFF)
+option(HATMOTOR "Set to ON to incude HatMotor-Python files" OFF)
 message(STATUS "With HATMOTOR = ${WITH_HATMOTOR}")
 if(WITH_HATMOTOR)
-  add_subdirectory(HatMotor-Python)
+  add_subdirectory(HatMotor)
 endif(WITH_HATMMOTOR)
 
-option(HATOLED "Set to ON to incude HATOLED-Python files" OFF)
+option(HATOLED "Set to ON to incude HatOled-Python files" OFF)
 message(STATUS "With HATOLED = ${WITH_HATOLED}")
 if(WITH_HATMOTOR)
-  add_subdirectory(HatOled-Python)
+  add_subdirectory(HatOled)
 endif(WITH_HATOLED)
-
-option(WITH_SYSTEMD "Set to ON to include systemd support" OFF)
-message(STATUS "With Systemd = ${WITH_SYSTEMD}")
-if(WITH_SYSTEMD)
-  add_subdirectory(systemd)
-endif(WITH_SYSTEMD)
 
 # Experimental CPack package building
 set(CPACK_SET_DESTDIR "ON")

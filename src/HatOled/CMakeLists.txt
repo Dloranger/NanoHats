@@ -1,19 +1,20 @@
-set(PYTHON_SOURCE_DIR "${CMAKE_SOURCE_DIR}/software/HatOled-Python" CACHE PATH
+option(WITH_DAEMON "Set to ON to include HatOled Daemonizer support" OFF)
+message(STATUS "With DEAMON = ${WITH_DAEMON}")
+if(WITH_DAEMON)
+  add_subdirectory(HatOled-Daemon)
+endif(WITH_DAEMON)
+
+option(WITH_OLED_SYSTEMD "Set to ON to include HatOled Systemd support" OFF)
+message(STATUS "With Systemd = ${WITH_OLED_SYSTEMD}")
+if(WITH_OLED_SYSTEMD)
+  add_subdirectory(HatOled_Systemd)
+endif(WITH_OLED_SYSTEMD)
+
+set(PYTHON_SOURCE_DIR "${CMAKE_SOURCE_DIR}/HatOled-Python" CACHE PATH
 	"Path to python files")
-set(PYTHON_INSTALL_DIR "${BB_SHARE_INSTALL_DIR}/python" CACHE PATH
+set(PYTHON_INSTALL_DIR "${HAT_SHARE_INSTALL_DIR}/python" CACHE PATH
 	"Path to python script files")
 	
-configure_file(${PYTHON_SOURCE_DIR}/bakebit.pth.in
-	${PYTHON_SOURCE_DIR}/bakebit.pth)
-message(STATUS "Python Path file:bakebit.pth")
-
-# Where to install BakeBit install / setup script 
-install(FILES ${PYTHON_SOURCE_DIR}/bakebit.pth
-	DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR}/python2.7/dist-packages
-	)
-message(STATUS "bakebit python path file will be installed to"
-    "${SHARE_INSTALL_PREFIX}/python2.7/dist-packages/bakebit.pth after make install"
-	)
 # Install targets
 install(FILES ${PYTHON_SOURCE_DIR}/DejaVuSansMono-Bold.ttf DejaVuSansMono.ttf bakebit.py 
 	bakebit_128_64_oled.py bakebit_128_64_oled_animate.py bakebit_128_64_oled_image.py 

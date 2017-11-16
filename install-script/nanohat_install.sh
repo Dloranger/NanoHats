@@ -89,11 +89,11 @@ echo "WiringNP Installed"
 sudo adduser ${USER_NAME} i2c
 
 #clone repo and install
-git clone  -b BakeBit_V2 https://github.com/RichNeese/BakeBit.git /usr/src/BakeBit
-cd /usr/src/BakeBit/src
+git clone https://github.com/RichNeese/NanoHats.git /usr/src/NanoHats
+cd /usr/src/NanoHats/src
 sudo mkdir build
 cd build
-sudo cmake -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DLOCAL_STATE_DIR=/var -DWITH_SYSTEMD=ON -DWITH_DAEMON=ON -Wno-dev .. 
+sudo cmake -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DLOCAL_STATE_DIR=/var -DWITH_SYSTEMD=ON -DWITH_DAEMON=ON -DWITH_HATOLED=ON -DWITH_HATMOTOR=ON -DWITH_HATHUB=ON -Wno-dev .. 
 sudo make
 sudo make install
 
