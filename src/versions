@@ -1,14 +1,14 @@
-# Version for the bakebit_analog_read application
-bakebit_analog_read=1.0.1
+# Version for the hubhat_ar application
+hubhat_ar=1.0.1
 
-# Version for the bakebit_analog_write application
-bakebit_analog_write=1.0.1
+# Version for the hubhat_aw application
+hubhat_aw=1.0.1
 
-# Version for the bakebit_analog_write application
-bakebit_digitial_write=1.0.1
+# Version for the hubhat_dr application
+hubhat_dr=1.0.1
 
-# Version for the bakebit_analog_write application
-bakebit_digital_write=1.0.0
+# Version for the hubhat_dw application
+hubhat_dw=1.0.0
 
 # Version for the nanohatoled application
 nanohatoled=1.0.0

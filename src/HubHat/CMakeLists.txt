@@ -12,15 +12,12 @@ add_version_target(hubhat_dw VERSION_DEPENDS)
 add_executable(hubhat_ar bakebit_analog_read.c bakebit.c
   ${VERSION_DEPENDS}
 )
-
 add_executable(hubhat_aw bakebit_analog_write.c bakebit.c
   ${VERSION_DEPENDS}
 )
-
 add_executable(hubhat_dr bakebit_digital_read.c bakebit.c
   ${VERSION_DEPENDS}
 )
-
 add_executable(hubhat_dw bakebit_digital_write.c bakebit.c
   ${VERSION_DEPENDS}
 )
