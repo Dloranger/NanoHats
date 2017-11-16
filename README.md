@@ -31,7 +31,7 @@ THE SOFTWARE.
 
 Scripted Install
 ================
-Grab the script from iinstall-script dir and chmod it +x and ./filename
+Grab the script from install-script dir and chmod it +x and ./filename
 
 This will do a complete install of all parts of NANOHAT.
 
