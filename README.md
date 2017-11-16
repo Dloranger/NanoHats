@@ -1,15 +1,15 @@
-BakeBit
+NANOHAT
 =======
 
-BakeBit for the NanoPi NEO: an open source platform for connecting BakeBit Sensors to the NanoPi NEO.
+NANOHAT for the NanoPi DUO/NEO/NEO2/NEOPLUS2: an open source platform for connecting BakeBit Sensors & NANOHATHUB / NANOHATOLED / NANOHATHOTOR.
 
 
 ## License
 
 The MIT License (MIT)
 
-BakeBit for the NanoPi NEO: an open source platform for connecting BakeBit Sensors to the NanoPi NEO.
-Copyright (C) 2016 FriendlyARM
+NANOHAT for the NanoPi DUO/NEO/NEO2/NEOPLUS2: an open source platform for connecting BakeBit Sensors & NANOHATHUB / NANOHATOLED / NANOHATHOTOR.
+Copyright (C) 2017 FriendlyARM / Richard Neese <r.neese@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
