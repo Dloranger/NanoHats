@@ -1,4 +1,5 @@
 set(HUBHAT_SOURCE_DIR "${CMAKE_SOURCE_DIR}/HubHat" CACHE PATH
+"Path to HubHat source")
 
 # Add targets for version files
 set(VERSION_DEPENDS)
@@ -27,4 +28,3 @@ install(TARGETS hubhat_ar DESTINATION ${BIN_INSTALL_DIR})
 install(TARGETS hubhat_aw DESTINATION ${BIN_INSTALL_DIR})
 install(TARGETS hubhat_dr DESTINATION ${BIN_INSTALL_DIR})
 install(TARGETS hubhat_dw DESTINATION ${BIN_INSTALL_DIR})
-
