@@ -7,7 +7,7 @@ After=network.target remote-fs.target syslog.target time.target
 
 [Service]
 PIDFile=/run/nanohatoled.pid
-ExecStartPre=-/bin/touch /var/log/nanohatoled.log
+ExecStartPre=-/bin/touch /var/log/nanohat-oled.log
 ExecStart=/bin/sh -c '@BIN_INSTALL_DIR@/nanohatoled'
 ExecReload=/bin/kill -s HUP $MAINPID
 WorkingDirectory=@BIN_INSTALL_DIR@

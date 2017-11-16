@@ -91,7 +91,7 @@ endif(NOT DEFINED INIT_D_INSTALL_DIR)
 
 # Where to install BBLink architecture independent files
 if(NOT DEFINED BB_SHARE_INSTALL_DIR)
-  set(BB_SHARE_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/bakebit)
+  set(HAT_SHARE_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/nanohat)
 endif(NOT DEFINED BB_SHARE_INSTALL_DIR)
 
 ##############################################################################
@@ -243,8 +243,11 @@ read_versions_file(${PROJECT_SOURCE_DIR}/versions)
 # Find the chown utility
 include(FindCHOWN)
 
-# Add directories toc  build
-add_subdirectory(software)
+option(FIRMWARE "Set to ON to incude bakebit firmware update tool files" OFF)
+message(STATUS "With FIRMWARE = ${WITH_FIRMWARE}")
+if(WITH_FIRMWARE)
+  add_subdirectory(Bakebit-Firmware-Tool)
+endif(WITH_FIRMWARE)
 
 option(HUBHAT "Set to ON to incude HatHub-C bin files" OFF)
 message(STATUS "With HUBHAT = ${WITH_HUBHAT}")
