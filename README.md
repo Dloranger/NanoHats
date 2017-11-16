@@ -48,11 +48,12 @@ Step 4) cd build
 
 Step 5) Replace "OPTIONS" with any of the following:
 
-For OledHat : -DWITH_OLED_SYSTEMD=ON -DWITH_OLED_DAEMON=ON -DWITH_HATOLED=ON 
+For OledHat : -DWITH_OLED_SYSTEMD=ON -DWITH_OLED_DAEMON=ON -DWITH_OLEDHAT=ON 
 
-For MotorHat : -DWITH_HATMOTOR=ON
+For MotorHat : -DWITH_MOTORHAT=ON
 
-for HatHub : -DWITH_HATHUB=ON 
+for HubHat : -DWITH_HUBHAT=ON
+
 Step 5.1) cmake -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DLOCAL_STATE_DIR=/var "OPTIONS" -Wno-dev .. 
 
 Step 6) make
