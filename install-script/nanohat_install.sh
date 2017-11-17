@@ -93,7 +93,7 @@ git clone https://github.com/RichNeese/NanoHats.git /usr/src/NanoHats
 cd /usr/src/NanoHats/src
 sudo mkdir build
 cd build
-sudo cmake -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DLOCAL_STATE_DIR=/var -DWITH_OLED_SYSTEMD=ON -DWITH_OLED_DAEMON=ON -DWITH_HATOLED=ON -DWITH_HATMOTOR=ON -DWITH_HATHUB=ON -Wno-dev .. 
+sudo cmake -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DLOCAL_STATE_DIR=/var -DWITH_OLED_SYSTEMD=ON -DWITH_OLED_DAEMON=ON -DWITH_OLEDHAT=ON -DWITH_MOTORHAT=ON -DWITH_HUBHAT=ON -Wno-dev .. 
 sudo make
 sudo make install
 
