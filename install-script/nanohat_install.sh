@@ -50,7 +50,7 @@ if [ ${USER_ID} -ne 0 ]; then
 fi
 echo ""
 echo " Checking For Updates  "
-sudo apt-get update --yes
+sudo apt-get update -y
 echo "======================="
 
 echo " "
@@ -59,7 +59,7 @@ echo "======================="
 sudo apt-get install gcc -y
 sudo apt-get install cmake git libi2c-dev i2c-tools minicom libfreetype6-dev libjpeg-dev avrdude -y
 sudo apt-get install python2.7 python-dev python-pip python-setuptools python-serial python-smbus python-psutil -y
-yes | sudo pip install wheel image pillow
+yes | sudo pip install wheel
 yes | sudo pip install image
 yes | sudo pip install pillow
 
